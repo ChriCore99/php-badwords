@@ -1,21 +1,16 @@
 <?php 
-    // richiesta con metodo GET
-    var_dump($_GET);
-
-    $paragrafo = $_GET['paragrafo'];
-
     // richiesta con metodo POST
     var_dump($_POST);
+
+    $paragrafo = $_POST['paragrafo'];
 
     $parola_da_censurare = $_POST['parola_da_censurare'];
 
     $lunghezzaParolaBrutta = strlen($parola_da_censurare);
 
-    $parolaCensurata = str_replace($parola_da_censurare, '***', $parola_da_censurare);
+    $paragrafoCensurato = str_replace($parola_da_censurare, '***', $paragrafo);
 
-    $lunghezzaParolaCensurata = strlen($parolaCensurata); 
-
-    $carateriCambiati = $lunghezzaParolaBrutta - $lunghezzaParolaCensurata;
+    $lunghezzaParolaCensurata = strlen($paragrafoCensurato); 
 ?>
 
 <div>
@@ -27,13 +22,9 @@
 </div>
 
 <div>
-    la parola censurata è = <?php echo $parolaCensurata; ?>
+    la parola censurata è = <?php echo $paragrafoCensurato; ?>
 </div>
 
 <div>
     lunghezza parola censurata = <?php echo $lunghezzaParolaCensurata; ?>
-</div>
-
-<div>
-    i caratteri cambiati sono = <?php echo $carateriCambiati; ?>
 </div>
