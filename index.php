@@ -12,7 +12,7 @@
         <form action="./server.php" method="POST">
             <div>
                 <label for="paragrafo">paragrafo</label>
-                <input type="text" name="paragrafo" id="paragrafo" placeholder="inserisci un paragrafo">
+                <textarea name="paragrafo" id="paragrafo" placeholder="inserisci un paragrafo"> </textarea>
             </div>
 
             <div>

@@ -8,7 +8,7 @@
 
     $lunghezzaParolaBrutta = strlen($parola_da_censurare);
 
-    $paragrafoCensurato = str_replace($parola_da_censurare, '***', $paragrafo);
+    $paragrafoCensurato = str_replace($parola_da_censurare, '***', $paragrafo, $count);
 
     $lunghezzaParolaCensurata = strlen($paragrafoCensurato); 
 ?>
@@ -27,4 +27,8 @@
 
 <div>
     lunghezza parola censurata = <?php echo $lunghezzaParolaCensurata; ?>
+</div>
+
+<div>
+    numero di parole censurate = <?php echo $count; ?>
 </div>
