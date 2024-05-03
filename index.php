@@ -9,13 +9,17 @@
     
 
     <main>
-        <form action="">
+        <form action="./server.php">
         <p>
                 <label for="paragrafo">paragrafo</label>
                 <input type="text" name="paragrafo" placeholder="inserisci un paragrafo">
             </p>
 
-            <p>
+            <button>invia</button>
+        </form>
+
+        <form action="./server.php" method="POST">
+        <p>
                 <label for="parolaCensurata">parola censurata</label>
                 <input type="text" name="parolaCensurata" placeholder="inserisci una parola">
             </p>
